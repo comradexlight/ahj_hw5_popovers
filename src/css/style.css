@@ -4,8 +4,8 @@ form {
 }
 
 .button {
-    color: white;
-    background: red;
+    color: #fff;
+    background-color: #dc3545;
     height: 48px;
     text-align: center;
     vertical-align: middle;
@@ -14,4 +14,5 @@ form {
     padding-top: 9px;
     padding-bottom: 9px;
     line-height: 20px;
+    cursor: pointer;
 }
