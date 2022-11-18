@@ -26,7 +26,7 @@ export default class Popover {
     const { left, top } = element.getBoundingClientRect();
 
     popoverElement.style.left = `${left + element.offsetWidth / 2 - popoverElement.offsetWidth / 2}px`;
-    popoverElement.style.top = `${top - 80}px`;
+    popoverElement.style.top = `${top - 40}px`;
 
     return id;
   }

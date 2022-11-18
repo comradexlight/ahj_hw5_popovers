@@ -1,2 +1,6 @@
 import './css/style.css';
-import './js/app';
+import PopoverWidget from './js/popoverWidget';
+
+document.addEventListener('DOMContentLoaded', () => {
+  new PopoverWidget('.form');
+});
