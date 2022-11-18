@@ -1,5 +1,5 @@
 form {
-    margin-top: 50px;
+    margin-top: 75px;
     margin-left: 25px;
 }
 
@@ -15,4 +15,19 @@ form {
     padding-bottom: 9px;
     line-height: 20px;
     cursor: pointer;
+}
+
+.popover-header {
+    font-size: 10px;
+}
+
+.popover {
+    padding: 10px;
+    height: 15px;
+    width: 200px;
+    font-size: 9px;
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+    left: 1px;
 }

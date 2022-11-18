@@ -13,6 +13,7 @@
         "sourceType": "module"
     },
     "rules": {
+    "no-underscore-dangle": 0,
     "no-restricted-syntax": [
       "error",
       "LabeledStatement",

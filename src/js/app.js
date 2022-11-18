@@ -1,7 +1,7 @@
 import Popover from './popover';
 
 const popoverFactory = new Popover();
-const actualPopovers = [];
+let actualPopovers = [];
 const form = document.querySelector('.form');
 
 const showPopover = (el) => {
@@ -11,23 +11,26 @@ const showPopover = (el) => {
   });
 };
 
+const removePopover = (el) => {
+  const actualPopover = actualPopovers.find((p) => p.title === el.title);
+  actualPopovers = actualPopovers.filter((p) => p.id !== actualPopover.id);
+  popoverFactory.removePopover(actualPopover.id);
+};
+
 form.addEventListener('click', (e) => {
   if (e.target.classList.contains('button')) {
     e.preventDefault();
-    
-
-    console.log(e.target.title)
-    const found = actualPopovers.forEach((el) => {
+    const found = actualPopovers.find((el) => {
       if (el.title === e.target.title) {
         return true;
       }
 
       return false;
     });
-    if (found) {
-      console.log('here');
-    } else {
+    if (!found) {
       showPopover(e.target);
+    } else {
+      removePopover(e.target);
     }
   }
 });
