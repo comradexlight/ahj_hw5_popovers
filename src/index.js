@@ -1,6 +1,6 @@
 import './css/style.css';
-import PopoverWidget from './js/popoverWidget';
+import BtnWidget from './js/btnWidget';
 
 document.addEventListener('DOMContentLoaded', () => {
-  new PopoverWidget('.form');
+  new BtnWidget('.form');
 });

@@ -18,26 +18,31 @@
 }
 
 .popover {
-    padding: 10px;  
-    height: 15px;
+    max-height: 200px;
+    max-height: 55px;
     width: 200px;
-    font-size: 9px;
+    height: 55px;
+    font-size: 10px;
     position: absolute;
-    border: 1px solid;
+    border: 2px solid;
+    border-radius: calc(.3rem - 1px);
+    box-sizing: border-box;
+    text-align: justify;
 }
 
 .popover-body {
-/*    border: 1px solid;*/
-    position: absolute;
-    height: 15px;
-
+    padding: 3px 2px 3px 2px;
+    color: #212529;
+    margin: 0;
+    height: 65%;
+    box-sizing: border-box;
 }
 
 .popover-header {
-    height: 5px;
-    font-size: 10px;
-/*    border: 1px solid;*/
-    position: absolute;
-    top: -10px;
-
+    padding: 0px 2px 3px 2px;
+    background-color: #f7f7f7;
+    margin: 0;
+    border-bottom: 1px solid;
+    height: 35%;
+    box-sizing: border-box;
 }

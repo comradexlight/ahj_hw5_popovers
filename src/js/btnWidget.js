@@ -1,6 +1,6 @@
 import Popover from './popover';
 
-export default class PopoverWidget {
+export default class BtnWidget {
   constructor(element) {
     if (typeof element === 'string') {
       element = document.querySelector(element);

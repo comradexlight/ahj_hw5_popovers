@@ -7,7 +7,6 @@ export default class Popover {
     const popoverElement = document.createElement('div');
     popoverElement.classList.add('popover');
     const popoverHTML = `
-        <div class="arrow"></div>
         <h3 class="popover-header"></h3>
         <div class="popover-body"></div>
         `;
@@ -24,9 +23,8 @@ export default class Popover {
     document.body.appendChild(popoverElement);
 
     const { left, top } = element.getBoundingClientRect();
-
     popoverElement.style.left = `${left + element.offsetWidth / 2 - popoverElement.offsetWidth / 2}px`;
-    popoverElement.style.top = `${top - 40}px`;
+    popoverElement.style.top = `${top - 60}px`;
 
     return id;
   }
